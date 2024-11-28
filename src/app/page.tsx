@@ -3,6 +3,7 @@ import { Projects } from '../component/Projects'
 import { Services } from '../component/Services'
 import { Education } from '../component/Education'
 import { ContactForm } from '../component/ContactForm'
+import { Experience } from '../component/Experience'
 import Link from 'next/link'
 import { SiLeetcode } from 'react-icons/si'
 import { Button } from '../component/ui/button'
@@ -56,6 +57,7 @@ export default function Home() {
       </section>
 
       <Skills />
+      <Experience />
       <Projects />
       <Services />
       <Education />
