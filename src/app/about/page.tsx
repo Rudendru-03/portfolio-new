@@ -4,7 +4,7 @@ export default function About() {
       <h1 className="text-4xl font-bold mb-6">About Me</h1>
       <div className="prose max-w-none">
         <p>
-          I'm a web developer with a passion for creating user-friendly and visually appealing websites.
+          I&apos;m a web developer with a passion for creating user-friendly and visually appealing websites.
           With expertise in React, Next.js, and various other web technologies, I strive to deliver
           high-quality solutions that meet and exceed client expectations.
         </p>
