@@ -11,19 +11,26 @@ type ExperienceItem = {
 
 const experiences: ExperienceItem[] = [
   {
-    company: "Tech Innovators Inc.",
+    company: "BterAi",
     position: "Software Developer",
-    duration: "Jan 2022 - Present",
-    description: "Developed and maintained web applications using React and Node.js. Implemented new features and optimized existing codebase for better performance.",
-    skills: ["React", "Node.js", "TypeScript", "MongoDB"]
+    duration: "Jan 2024 - Sep 2024",
+    description: "Developed and integrated React.js and Redux components, built RESTful APIs with Express and Postgres, implemented Stripe and Kafka, ensured code quality with unit tests and Swagger, and resolved complex bugs in video calling and chatbot projects to enhance peer-to-peer communication stability.",
+    skills: ["React", "Node.js", "TypeScript", "Postgresql", "JavaScript", "Git", "Debugging"]
   },
   {
-    company: "Digital Solutions Ltd.",
-    position: "Junior Web Developer",
-    duration: "Jun 2020 - Dec 2021",
-    description: "Assisted in the development of responsive websites and contributed to the company's internal tools using JavaScript and PHP.",
-    skills: ["JavaScript", "PHP", "MySQL", "HTML", "CSS"]
+    company: "ApnaCam",
+    position: "Full Stack Developer",
+    duration: "Jun 2023 - Jan 2024",
+    description: "Developed frontend interfaces and backend logic, implemented secure RESTful APIs with authentication and authorization using Express.js, and optimized state management in React.js with Redux Toolkit for improved scalability and maintainability.",
+    skills: ["JavaScript", "React.js", "MySQL", "HTML", "CSS", "Tailwind Css", "MongoDB", "Firebase", "Git", "Debugging"]
   },
+  {
+    company: "Techara",
+    position: "Frontend Developer",
+    duration: "Feb 2023 - Apr 2023",
+    description: "Developed a responsive and user-friendly dashboard using React.js and Ant Design, delivering an intuitive interface for efficient data visualization and management.",
+    skills: ["React js", "React Native", "JavaScript", "Node.js", "MySQL", "Git", "HTML", "CSS"]
+  }
   // Add more experiences as needed
 ];
 
