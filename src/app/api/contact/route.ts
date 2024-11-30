@@ -5,6 +5,13 @@ export async function POST(req: Request) {
   try {
     const { name, email, purpose, message } = await req.json();
 
+    console.log("Attempting to send email with the following config:");
+    console.log(`Host: ${process.env.EMAIL_HOST}`);
+    console.log(`Port: ${process.env.EMAIL_PORT}`);
+    console.log(`User: ${process.env.EMAIL_USER}`);
+    console.log(`From: ${process.env.EMAIL_FROM}`);
+    console.log(`To: ${process.env.EMAIL_TO}`);
+
     const transporter = nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
       port: parseInt(process.env.EMAIL_PORT || "587"),
@@ -37,6 +44,7 @@ export async function POST(req: Request) {
       `,
     });
 
+    console.log("Email sent successfully");
     return NextResponse.json(
       { message: "Email sent successfully" },
       { status: 200 }
