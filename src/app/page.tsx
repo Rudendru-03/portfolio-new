@@ -10,7 +10,7 @@ import { Github, Linkedin, Mail } from 'lucide-react'
 import Script from 'next/script'
 
 export default function Home() {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();s
 
   return (
     <>
