@@ -8,8 +8,32 @@ import { ThemeProvider } from '../component/theme-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Rudendru Rahul',
-  description: 'About rudendru rahul exprience and skills and profectional details.',
+  title: 'Rudendru Rahul - Full Stack Developer Portfolio',
+  description: 'Explore the portfolio of Rudendru Rahul, a skilled full stack developer specializing in React, Next.js, and modern web technologies. View projects, skills, and contact information.',
+  keywords: ['Rudendru Rahul', 'Full Stack Developer', 'React', 'Next.js', 'Portfolio', 'Web Development'],
+  authors: [{ name: 'Rudendru Rahul' }],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.rudendrurahul.com',
+    title: 'Rudendru Rahul - Full Stack Developer Portfolio',
+    description: 'Explore the portfolio of Rudendru Rahul, a skilled full stack developer specializing in React, Next.js, and modern web technologies.',
+    images: [
+      {
+        url: 'https://www.rudendrurahul.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Rudendru Rahul Portfolio',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Rudendru Rahul - Full Stack Developer Portfolio',
+    description: 'Explore the portfolio of Rudendru Rahul, a skilled full stack developer specializing in React, Next.js, and modern web technologies.',
+    images: ['https://www.rudendrurahul.com/twitter-image.jpg'],
+    creator: '@rudendrurahul',
+  },
 }
 
 export default function RootLayout({
