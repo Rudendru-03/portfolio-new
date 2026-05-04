@@ -15,24 +15,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.rudendrurahul.com',
+    url: '',
     title: 'Rudendru Rahul - Full Stack Developer Portfolio',
-    description: 'Explore the portfolio of Rudendru Rahul, a skilled full stack developer specializing in React, Next.js, and modern web technologies.',
-    images: [
-      {
-        url: 'https://www.rudendrurahul.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Rudendru Rahul Portfolio',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Rudendru Rahul - Full Stack Developer Portfolio',
-    description: 'Explore the portfolio of Rudendru Rahul, a skilled full stack developer specializing in React, Next.js, and modern web technologies.',
-    images: ['https://www.rudendrurahul.com/twitter-image.jpg'],
-    creator: '@rudendrurahul',
+    description: '',
   },
 }
 
