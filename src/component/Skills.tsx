@@ -6,10 +6,10 @@ const skillCategories = [
   {
     category: "Languages",
     skills: [
-      { name: "C++", proficiency: 80 },
-      { name: "JavaScript", proficiency: 90 },
-      { name: "TypeScript", proficiency: 85 },
-      { name: "Python", proficiency: 75 },
+      { name: "JavaScript", proficiency: 75 },
+      { name: "TypeScript", proficiency: 65 },
+      { name: "Python", proficiency: 60 },
+      { name: "C++", proficiency: 60 },
     ]
   },
   {
@@ -29,25 +29,30 @@ const skillCategories = [
   {
     category: "Frameworks",
     skills: [
-      { name: "React.js", proficiency: 90 },
-      { name: "Node.js", proficiency: 85 },
-      { name: "Next.js", proficiency: 80 },
+      { name: "React.js", proficiency: 80 },
+      { name: "Node.js", proficiency: 75 },
+      { name: "Express.js", proficiency: 70 },
+      { name: "Angular.js", proficiency: 40 },
+      { name: "Vue.js", proficiency: 30 },
+      { name: "FastAPI.js", proficiency: 60 },
+      { name: "Next.js", proficiency: 65 },
     ]
   },
   {
     category: "Databases",
     skills: [
-      { name: "SQL", proficiency: 75 },
+      { name: "Postgresql", proficiency: 70 },
       { name: "MySQL", proficiency: 70 },
       { name: "MongoDB", proficiency: 80 },
+      { name: "Redis", proficiency: 70 },
     ]
   },
   {
-    category: "Computer Science",
+    category: "System Design",
     skills: [
-      { name: "Operating System", proficiency: 75 },
+      { name: "HLD", proficiency: 70 },
       { name: "Network", proficiency: 70 },
-      { name: "DBMS", proficiency: 80 },
+      { name: "LLD", proficiency: 70 },
     ]
   },
   {

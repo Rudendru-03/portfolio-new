@@ -6,7 +6,7 @@ import { Experience } from '../component/Experience'
 import { ContactForm } from '../component/ContactForm'
 import Link from 'next/link'
 import { Button } from '../component/ui/button'
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { Github, Linkedin, Code2 } from 'lucide-react'
 import Script from 'next/script'
 
 export default function Home() {
@@ -40,30 +40,30 @@ export default function Home() {
                 Hi 👋, I'm Rudendru Rahul
               </h1>
               <p className="text-xl md:text-2xl mb-8">
-                Passionate about creating innovative web solutions using React, Next.js, and modern technologies.
+                Proficient Full Stack Developer in scalable, secure, and optimized development of applications.
               </p>
               <div className="flex justify-center space-x-4 mb-8">
-                <Link href="https://github.com/rudendrurahul" target="_blank" rel="noopener noreferrer">
+                <Link href="https://github.com/Rudendru-03" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon">
                     <Github className="h-5 w-5" />
                     <span className="sr-only">GitHub</span>
                   </Button>
                 </Link>
-                <Link href="https://linkedin.com/in/rudendrurahul" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.linkedin.com/in/rudendru-rahul-366955201/" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon">
                     <Linkedin className="h-5 w-5" />
                     <span className="sr-only">LinkedIn</span>
                   </Button>
                 </Link>
-                <Link href="mailto:rudendru0310@gmail.com">
+                <Link href="https://leetcode.com/u/bumrah03/">
                   <Button variant="outline" size="icon">
-                    <Mail className="h-5 w-5" />
-                    <span className="sr-only">Email</span>
+                    <Code2 className="h-5 w-5" />
+                    <span className="sr-only">LeetCode</span>
                   </Button>
                 </Link>
               </div>
               <Button asChild>
-                <Link href="/rudenderu_rahul.pdf" download>
+                <Link href="/Rudendru-04-05-26.pdf" download target="_blank" >
                   Download Resume
                 </Link>
               </Button>

@@ -3,62 +3,81 @@ import Link from 'next/link'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '../component/ui/card'
 import { Button } from '../component/ui/button'
 
+type DescriptionBullet = { text: string }
 
-const projects = [
+type Project = {
+  name: string
+  description: DescriptionBullet[]
+  image: string
+  prodLink: string
+  github: string
+}
+
+const projects: Project[] = [
+  {
+    name: 'AI resume analyzer and chat',
+    description: [
+      { text: 'Career Tools: ATS scoring and skill extraction, helping candidates identify gaps for 2x better recruiter visibility.' },
+      { text: 'JD Matching: Aligns resumes with job descriptions (90%+ accuracy) to surface missing skills and reduce guesswork.' },
+      { text: 'Interview Readiness: Generates targeted technical and managerial questions from resumes for real‑world scenarios.' },
+      { text: 'AI Infra: Combines Gemini with vector search for 30% cost-effective performance, utilizing MongoDB Atlas for secure auth and Vercel/Render for resilient handling and optimized concurrency in the free-tier environment.' },
+    ],
+    image: '/images/ai-resume-analyzer.png',
+    prodLink: 'https://resume-analyzer-and-chat.vercel.app/',
+    github: 'https://github.com/Rudendru-03/Resume-analyzer-and-chat',
+  },
+  {
+    name: 'Employee Management portal',
+    description: [
+      { text: 'End‑to‑end Employee Portal supporting 200+ employees with auth, RBAC, onboarding, attendance, leave, payroll, and announcements.' },
+      { text: 'Backend achieving 99.9% uptime using Node.js, Express, MongoDB Atlas, Redis, and deployed on Render.' },
+      { text: 'Notification system powered by SendGrid + BullMQ, delivering 1000+ async email alerts per day with retry/backoff.' },
+      { text: 'ReactJS frontend with Context API and TailwindCSS on Vercel, resulting in 90+ PageSpeed score for responsive UX.' },
+    ],
+    image: '/images/employee-portal.png',
+    prodLink: 'https://employee-management-frontend-sooty-six.vercel.app/',
+    github: 'https://github.com/Rudendru-03/Employee-Management',
+  },
+  {
+    name: 'E-Commerce',
+    description: [
+      { text: 'Full-stack e-commerce platform using React.js, Express, and MySQL, featuring a product catalog of 100+ items, a shopping cart, and secure Google OAuth authentication.' },
+      { text: 'Developed a robust Order Management System (OMS) handling 50+ simultaneous orders with Payment Gateway integration and an admin dashboard for analytics.' },
+      { text: 'Implemented user profiles, wishlist, and an efficient workflow that reduced processing time by 15% to ensure a scalable and secure experience.' },
+    ],
+    image: '',
+    prodLink: '',
+    github: 'https://github.com/Rudendru-03/Ecommercec-backend',
+  },
   {
     name: 'SORTING-VISUALIZATION',
-    description: 'This project visualizes how various sorting algorithms work, such as Bubble Sort, Merge Sort, Insertion Sort, and Quick Sort. It provides an interactive and educational way to understand the step-by-step execution of these algorithms.',
+    description: [
+      { text: 'This project visualizes how various sorting algorithms work, such as Bubble Sort, Merge Sort, Insertion Sort, and Quick Sort. ' },
+      { text: 'It provides an interactive and educational way to understand the step-by-step execution of these algorithms.' },
+    ],
     image: '/images/sorting-img.png',
+    prodLink: '',
     github: 'https://github.com/Rudendru-03/SORTING-VISUALIZATION',
   },
   {
-    name: 'Weather-App',
-    description: 'This application allows users to view the weather for any location in India. It includes details like temperature, humidity, and weather conditions. The app is visually appealing, with a modern UI and a responsive design for seamless use across devices.',
-    image: '/images/weather-img.png',
-    github: 'https://github.com/Rudendru-03/Weather-App',
-  },
-  {
     name: 'Video-Search-Engine',
-    description: 'Using the YouTube API, this project enables users to search for videos, view their details, and play them. The application features a sleek shimmer effect for loading states and provides a rich user experience with detailed video metadata displayed in an intuitive format.',
+    description: [
+      { text: 'Using the YouTube API, this project enables users to search for videos, view their details, and play them.' },
+      { text: 'The application features a sleek shimmer effect for loading states and provides a rich user experience with detailed video metadata displayed in an intuitive format.' },
+    ],
     image: '/images/youtube-img.png',
+    prodLink: '',
     github: 'https://github.com/Rudendru-03/Video-Search-Engine',
   },
   {
-    name: '2048_Games',
-    description: 'A classic 2048 game built with HTML, CSS, and JavaScript. The project includes smooth animations, an intuitive grid design, and responsive controls for a fun and engaging experience.',
-    image: '/placeholder.svg?height=200&width=300',
-    github: 'https://github.com/Rudendru-03/2048_Games',
-  },
-  {
-    name: 'Portfolio',
-    description: "This is a personal portfolio website built with Next.js. It features a dark and light mode switch, a responsive design for all devices, and an integrated contact form that sends messages directly to the developer's email. The portfolio highlights skills, projects, and experience effectively.",
-
-    image: '/images/portfolio.png',
-    github: 'https://github.com/Rudendru-03/portfolio-new',
-  },
-  {
-    name: 'Mini-Swiggy',
-    description: "This project uses Swiggy's live API to implement features like restaurant search and a cart to track added items. Redux is utilized for state management, while the application features advanced styling effects to enhance user experience.",
-    image: '/placeholder.svg?height=200&width=300',
-    github: 'https://github.com/yourusername/project-c',
-  },
-  {
     name: 'Netflix-Gpt',
-    description: 'This project is a Netflix-like clone with added functionality of login and logout implemented using Firebase. For video suggestions, ChatGPT has been integrated, making the experience dynamic and interactive.',
+    description: [
+      { text: 'This project is a Netflix-like clone with added functionality of login and logout implemented using Firebase.' },
+      { text: 'For video suggestions, ChatGPT has been integrated, making the experience dynamic and interactive.' },
+    ],
     image: '/images/netflix.png',
+    prodLink: '',
     github: 'https://github.com/Rudendru-03/Netflix-Gpt',
-  },
-  {
-    name: 'nextJs-dashboard',
-    description: 'A dashboard-like application built to learn the basics of Next.js. It explores foundational features like server-side rendering, dynamic routing, and API integration.',
-    image: '/images/dashboard.png',
-    github: 'https://github.com/Rudendru-03/nextJs-dashboard',
-  },
-  {
-    name: 'chat-pdf',
-    description: "This application allows users to upload PDF documents and interact with them using ChatGPT. Users can ask questions about the content of the uploaded PDF, and the AI responds based on the document's information.Built with Next.js and integrated with ChatGPT for dynamic AI- driven interaction.",
-    image: '/placeholder.svg?height=200&width=300',
-    github: 'https://github.com/Rudendru-03/chatpdf-Project',
   },
 ]
 
@@ -81,12 +100,23 @@ export function Projects() {
               </CardHeader>
               <CardContent>
                 <CardTitle className="mb-2">{project.name}</CardTitle>
-                <p className="text-muted-foreground">{project.description}</p>
+                <ul className="text-muted-foreground list-disc space-y-1 pl-5 text-sm">
+                  {project.description.map((item, i) => (
+                    <li key={i}>{item.text}</li>
+                  ))}
+                </ul>
               </CardContent>
-              <CardFooter>
-                <Button asChild>
+              <CardFooter className="flex flex-wrap gap-2">
+                {project.prodLink.trim() !== '' && (
+                  <Button asChild variant="default">
+                    <Link href={project.prodLink} target="_blank" rel="noopener noreferrer">
+                      Live site
+                    </Link>
+                  </Button>
+                )}
+                <Button asChild variant="secondary">
                   <Link href={project.github} target="_blank" rel="noopener noreferrer">
-                    View on GitHub
+                    GitHub
                   </Link>
                 </Button>
               </CardFooter>
@@ -97,4 +127,3 @@ export function Projects() {
     </section>
   )
 }
-
