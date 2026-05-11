@@ -56,7 +56,7 @@ const projects: Project[] = [
       { text: 'It provides an interactive and educational way to understand the step-by-step execution of these algorithms.' },
     ],
     image: '/images/sorting-img.png',
-    prodLink: '',
+    prodLink: 'https://rudendru-03.github.io/SORTING-VISUALIZATION/',
     github: 'https://github.com/Rudendru-03/SORTING-VISUALIZATION',
   },
   {

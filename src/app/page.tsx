@@ -63,7 +63,7 @@ export default function Home() {
                 </Link>
               </div>
               <Button asChild>
-                <Link href="/Rudendru-04-05-26.pdf" download target="_blank" >
+                <Link href="https://docs.google.com/document/d/1wmgb6QyPARXq30p8R_6MSjlICPBTmUdM/edit?usp=sharing&ouid=105042896137619830928&rtpof=true&sd=true" download target="_blank" >
                   Download Resume
                 </Link>
               </Button>
