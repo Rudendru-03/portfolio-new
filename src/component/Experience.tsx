@@ -18,7 +18,7 @@ const experiences: ExperienceItem[] = [
     company: "OAK Network",
     link: "https://oak-network.com/",
     position: "Full Stack Developer",
-    duration: "Apr 2024 - Dec 2025",
+    duration: "Apr 2024 - Mar 2026",
     description: [
       {
         text: "Architected, secured, and versioned high-throughput RESTful APIs (handling 5k+ requests/min) using Node.js/Express and FastAPI, implementing secure role-based access control (RBAC) and Microsoft Entra ID authentication.",
